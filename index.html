@@ -7,110 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <style>
-       .dark-mode {
-            background-color: #121212;
-            color: #ffffff;
-        }
-        .light-mode {
-            background-color: #ffffff;
-            color: #000000;
-        }
-        .toggle-button {
-            position: fixed;
-            top: 20px;
-            right: 10px;
-            width: 35px;
-            height: 35px;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #000000;
-            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.3s, transform 0.3s;
-        }
-        .toggle-button:hover {
-            transform: scale(1.1);
-        }
-        .dark-mode .toggle-button {
-            background-color: #34495e;
-        }
-        .icon {
-            font-size: 24px;
-            color: white;
-        }
-        /* Góc trên trái */
-    .takeshi::before {
-      content: "";
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      width: 40px;
-      height: 4px;
-      background-color: #007bff; /* Màu xanh */
-    }
-
-    .takeshi::after {
-      content: "";
-      position: absolute;
-      top: -20px;
-      left: -20px;
-      width: 4px;
-      height: 40px;
-      background-color: #007bff; /* Màu xanh */
-    }
-    /* Góc dưới phải */
-    .takeshi span::before {
-      content: "";
-      position: absolute;
-      bottom: -20px;
-      right: -20px;
-      width: 40px;
-      height: 4px;
-      background-color: #007bff; /* Màu xanh */
-    }
-    .takeshi span::after {
-      content: "";
-      position: absolute;
-      bottom: -20px;
-      right: -20px;
-      width: 4px;
-      height: 40px;
-      background-color: #007bff; /* Màu xanh */
-    }
-    .takeshi {
-      font-size: 36px;
-      font-weight: bold;
-      color: #ffffff; /* Chữ trắng */
-      position: relative;
-      display: inline-block;
-      margin-left: 60px; 
-      margin-top: 60px;
-    }
-    </style>
     <body class="dark-mode">
-        <!-- Nút chuyển đổi -->
         <button class="toggle-button" onclick="toggleTheme()">
-            <span class="icon">❂</span>
+            <span class="icon"></span>
         </button>
             <script>
-            // JavaScript để chuyển đổi giao diện
             function toggleTheme() {
                 const body = document.body;
                 const button = document.querySelector('.toggle-button .icon');
                 if (body.classList.contains('light-mode')) {
                     body.classList.remove('light-mode');
                     body.classList.add('dark-mode');
-                    button.textContent = '❂'; // Biểu tượng mặt trời
+                    button.textContent = ''; 
                 } else {
                     body.classList.remove('dark-mode');
                     body.classList.add('light-mode');
-                    button.textContent = '✹'; // Biểu tượng mặt trăng
+                    button.textContent = ''; 
                 }
             }
+                 
         </script>
     </body>
     <div class="container">
@@ -141,31 +56,26 @@
                     Cớ sao nhớ mãi một nhành hoa?</p>
                 <p class="sub-text">마음이 약해서 바랄 뿐이야 | 당신은 항상 나와 함께있을 것입니다.</p>
                 <div class="buttons">
-                    <a href="#" class="btn">Discord Server</a>
-                    <a href="#" class="btn">Discord Profile</a>
+                    <a href="https://discord.gg/hG63Fkfs" class="btn">Discord Server</a>
+                    <a href="https://discord.com/users/963680124593655848" class="btn">Discord Profile</a>
                 </div>
             </div>
             <div class="image-container">
-                <img src="yae2.png" alt="Anime Girl">
+                <img src="yae4.png" alt="Anime Girl">
             </div>
         </main>
     </div>
     <script>
-        // Mảng các từ cần thay đổi
         const words = ["Fan Anime", "Một Tcon", "Chil Guy", "Chớp con"];
-        const colors = ["#FF6347", "#4682B4", "#32CD32", "#FFD700"]; // Mảng màu sắc
+        const colors = ["#FF6347", "#4682B4", "#32CD32", "#FFD700"];
         let currentWordIndex = 0;
         let currentColorIndex = 0;
 
         const movingTextElement = document.querySelector(".moving-text");
 
         setInterval(() => {
-            // Thay đổi nội dung của chữ
             movingTextElement.textContent = words[currentWordIndex];
-            // Thay đổi màu sắc
             movingTextElement.style.color = colors[currentColorIndex];
-
-            // Cập nhật chỉ số từ và màu
             currentWordIndex = (currentWordIndex + 1) % words.length;
             currentColorIndex = (currentColorIndex + 1) % colors.length;
         }, 2000);
