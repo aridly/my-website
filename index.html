@@ -9,20 +9,20 @@
 <body>
     <body class="dark-mode">
         <button class="toggle-button" onclick="toggleTheme()">
-            <span class="icon">☾</span>
+            <span class="icon">✚</span>
         </button>
             <script>
-            function toggleTheme() {
+           function toggleTheme() {
                 const body = document.body;
                 const button = document.querySelector('.toggle-button .icon');
                 if (body.classList.contains('light-mode')) {
                     body.classList.remove('light-mode');
                     body.classList.add('dark-mode');
-                    button.textContent = '☾'; 
+                    button.textContent = '❁'; 
                 } else {
                     body.classList.remove('dark-mode');
                     body.classList.add('light-mode');
-                    button.textContent = '✹'; 
+                    button.textContent = '✚'; 
                 }
             }
                  
