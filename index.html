@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thtampromax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+       .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .toggle-button {
+            position: fixed;
+            top: 20px;
+            right: 10px;
+            width: 35px;
+            height: 35px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .toggle-button:hover {
+            transform: scale(1.1);
+        }
+        .dark-mode .toggle-button {
+            background-color: #34495e;
+        }
+        .icon {
+            font-size: 24px;
+            color: white;
+        }
+        /* Góc trên trái */
+    .takeshi::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 20px;
+      height: 2px;
+      background-color: #007bff; /* Màu xanh */
+    }
+
+    .takeshi::after {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      width: 2px;
+      height: 20px;
+      background-color: #007bff; /* Màu xanh */
+    }
+    /* Góc dưới phải */
+    .takeshi span::before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      width: 20px;
+      height: 2px;
+      background-color: #007bff; /* Màu xanh */
+    }
+    .takeshi span::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      width: 2px;
+      height: 20px;
+      background-color: #007bff; /* Màu xanh */
+    }
+    .takeshi {
+      font-size: 36px;
+      font-weight: bold;
+      color: #ffffff; /* Chữ trắng */
+      position: relative;
+      display: inline-block;
+    }
+    </style>
+    <body class="dark-mode">
+        <!-- Nút chuyển đổi -->
+        <button class="toggle-button" onclick="toggleTheme()">
+            <span class="icon">❂</span>
+        </button>
+            <script>
+            // JavaScript để chuyển đổi giao diện
+            function toggleTheme() {
+                const body = document.body;
+                const button = document.querySelector('.toggle-button .icon');
+                if (body.classList.contains('light-mode')) {
+                    body.classList.remove('light-mode');
+                    body.classList.add('dark-mode');
+                    button.textContent = '❂'; // Biểu tượng mặt trời
+                } else {
+                    body.classList.remove('dark-mode');
+                    body.classList.add('light-mode');
+                    button.textContent = '✹'; // Biểu tượng mặt trăng
+                }
+            }
+        </script>
+    </body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="takeshi">
+                <span>Aridly</span>
+              </div>      
+            <nav>
+                <ul><br><br><br><br><br><br>
+                    <li><a href="#">🏠     Home</a></li>
+                    <li><a href="thtin.html">👤     Thông Tin</a></li>
+                    <li><a href="anh.html">📚     Hữu Ích</a></li>
+                    <li><a href="lienhe.html">🤙     Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="intro"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <h2>Yo, <span class="highlight">thtam<Tak/span> desu</h2>
+                <p>Chào Bạn ! <span class="highlight">Welcome</span></p>
+                <p> tôi là một Tcon mãi yêu T1</p>
+                <p class="sub-text">마음이 약해서 바랄 뿐이야 | 당신은 항상 나와 함께있을 것입니다.</p>
+                <div class="buttons">
+                    <a href="#" class="btn">Discord Server</a>
+                    <a href="#" class="btn">Discord Profile</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="yae2.png" alt="Anime Girl">
+            </div>
+        </main>
+    </div>
+</body>
+</html>

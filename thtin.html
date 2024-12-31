@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding-left: 20px; 
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 100%; 
+            max-width: 1200px;
+            border-left: 1px solid #333;
+            border-right: 1px solid #333;
+        }
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+        .column h2 {
+            color: #00aaff;
+            margin-bottom: 10px;
+        }
+        .column table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .column table td {
+            padding: 10px;
+            border-bottom: 1px solid #333;
+        }
+        .youtube-video, .discord-widget {
+            margin-top: 20px;
+        }
+        .discord-widget {
+            background-color: #5865f2;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: left; 
+        }
+        .discord-widget a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;       
+     </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h2>Thông Tin</h2>
+            <table>
+                <tr>
+                    <td><strong>Tên:</strong></td>
+                    <td>Nguyen Thanh Tam</td>
+                </tr>
+                <tr>
+                    <td><strong>Sinh Nhật:</strong></td>
+                    <td>7/3</td>
+                </tr>
+                <tr>
+                    <td><strong>Giới Tính:</strong></td>
+                    <td>Nam</td>
+                </tr>
+                <tr>
+                    <td><strong>Quê Quán:</strong></td>
+                    <td>Quảng Trị </td>
+                </tr>
+            </table>
+        </div>
+        <div class="column">
+            <h2>Sở Thích</h2>
+            <table>
+                <tr>
+                    <td><strong>Sở Thích:</strong></td>
+                    <td>Xem Tcha đánh Tcon</td>
+                </tr>
+                <tr>
+                    <td><strong>Game:</strong></td>
+                    <td><a href="https://genshin.hoyoverse.com/vi/home">Genshin Impact</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Bài Hát:</strong></td>
+                    <td><a href="https://www.youtube.com/watch?v=r6zIGXun57U">Legends Never Die</a></td>
+                </tr>
+                <tr>
+                    <td><strong>Idol:</strong></td>
+                    <td>Hachamaa | Mikeneko</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <div class="column">
+            <h2>Video</h2>
+            <div class="youtube-video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/lIFkpRYjqs0" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Home</h2>
+            <div class="discord-widget">
+                <a href="https://discord.com" target="_blank"> You Meee</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="thtin.html">Thông Tin</a></li>
+                    <li><a href="anh.html">Hữu Ích</a></li>
+              
+                    <li><a href="lienhe.html">Liên Hệ</a></li>
+                </ul>
+            </div>
+            <div class="discord-widget">
+                <iframe class="discord" width="100%" height="315" src="https://discord.com/widget?id=1322854945485094963&theme=dark"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
